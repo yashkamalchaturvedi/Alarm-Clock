@@ -1,31 +1,26 @@
-console.log("Yes");
 const alarmSubmit = document.getElementById("alarmSubmit");
 
-// Add an event listener to the submit button
+// Add an Event Listener to the Submit Button
 alarmSubmit.addEventListener("click", setAlarm);
 
 var audio = new Audio(
   "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 );
 
-// function to play the alarm ring tone
+// Function to Play the Alarm Ring Tone
 function ringBell() {
   audio.play();
 }
 
-// This function will run whenever alarm is set from the UI
+// Function will run whenever Alarm is set
 function setAlarm(e) {
-  e.preventDefault();
+  e.preventDefault(); // Page will not reload
   const alarm = document.getElementById("alarm");
   alarmDate = new Date(alarm.value);
-  console.log(`Setting Alarm for ${alarmDate}...`);
   now = new Date();
-
-  let timeToAlarm = alarmDate - now;
-  console.log(timeToAlarm);
+  let timeToAlarm = alarmDate - now; // Future time - Present time
   if (timeToAlarm >= 0) {
     setTimeout(() => {
-      console.log("Ringing now");
       ringBell();
     }, timeToAlarm);
   }
