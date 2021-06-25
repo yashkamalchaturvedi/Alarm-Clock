@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/69413160/123370895-4be85b00-d59e-11eb-
 
 ## Feedback
 
-If you have any feedback, you can reach me out at [Yash Kamal Chaturvedi](https://twitter.com/yashkamalchatu1?lang=en)
+If you have any feedback, you can reach me out at [Yash Kamal Chaturvedi](https://twitter.com/yashkamalchatu1?lang=en).
 
 ## Installation
 
@@ -61,7 +61,7 @@ I also have used a little amount of [Bootstrap](https://getbootstrap.com/) in th
 #### What is the use of Date Object?
 - JavaScript Date Object lets us work with dates.
 - Date objects are created with the new Date() constructor.
-- By default, JavaScript will use the browser's time zone and display a date as a full text string:
+- By default, JavaScript will use the browser's time zone and display a date as a full text string.
 
 
 
